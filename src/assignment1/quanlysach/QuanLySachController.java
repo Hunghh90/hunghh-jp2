@@ -1,18 +1,20 @@
 package assignment1.quanlysach;
 
 import assignment1.Form;
+import assignment1.Main;
+import assignment1.helper.Connertor;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.ResourceBundle;
 
 public class QuanLySachController implements Initializable {
@@ -22,9 +24,7 @@ public class QuanLySachController implements Initializable {
     public TableColumn<Form,String> Author;
     public TableColumn<Form,Integer> Quantity;
 
-    public final static String connectionString = "jdbc:mysql://localhost:3306/demojp2";
-    public final static String user = "root";
-    public final static String pwd = "";
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -35,11 +35,10 @@ public class QuanLySachController implements Initializable {
 
         ObservableList<Form> ls = FXCollections.observableArrayList();
        try {
-           Class.forName("com.mysql.jdbc.Driver");
-           Connection conn = DriverManager.getConnection(connectionString,user,pwd);
-           Statement statement = conn.createStatement();
+
            String sql_txt = "select * from books";
-           ResultSet rs = statement.executeQuery(sql_txt);
+           Connertor conn = new Connertor();
+           ResultSet rs = conn.query(sql_txt);
            while (rs.next()){
                int id = rs.getInt("id");
                String name = rs.getString("name");
@@ -57,11 +56,15 @@ public class QuanLySachController implements Initializable {
 
     }
 
-    public void Add(){
-
+    public void Add()throws Exception{
+        Parent addBook = FXMLLoader.load(getClass().getResource("../quanlysach/creatbook.fxml"));
+        Main.rootStage.setTitle("addBook");
+        Main.rootStage.setScene(new Scene(addBook, 800,600));
     }
 
-    public void Back(){
-
+    public void Back()throws Exception{
+        Parent addBook = FXMLLoader.load(getClass().getResource("../home.fxml"));
+        Main.rootStage.setTitle("addBook");
+        Main.rootStage.setScene(new Scene(addBook, 800,600));
     }
 }

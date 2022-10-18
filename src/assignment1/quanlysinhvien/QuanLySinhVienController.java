@@ -1,6 +1,7 @@
 package assignment1.quanlysinhvien;
 
 import assignment1.Student;
+import assignment1.helper.Connertor;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
@@ -22,9 +23,7 @@ public class QuanLySinhVienController implements Initializable {
     public TableColumn<Student,String> Email;
     public TableColumn<Student,String> Tel;
 
-    public final static String connectionString = "jdbc:mysql://localhost:3306/demojp2";
-    public final static String user = "root";
-    public final static String pwd = "";
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -35,11 +34,11 @@ public class QuanLySinhVienController implements Initializable {
 
         ObservableList<Student> lsv = FXCollections.observableArrayList();
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection(connectionString,user,pwd);
-            Statement statement = conn.createStatement();
+
             String sql_txt = "select * from students";
-            ResultSet rs = statement.executeQuery(sql_txt);
+            Connertor conn = new Connertor();
+
+            ResultSet rs = conn.query(sql_txt);
             while (rs.next()){
                 int id = rs.getInt("id");
                 String name = rs.getString("name");

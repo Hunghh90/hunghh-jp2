@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="assignment1.quanlysinhvien.CreatStudentController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtName" layoutX="226.0" layoutY="87.0" promptText="Student name" />
+      <TextField fx:id="txtEmail" layoutX="221.0" layoutY="145.0" promptText="Student Email" />
+      <TextField fx:id="txtTel" layoutX="221.0" layoutY="218.0" promptText="Tel" />
+      <Text layoutX="226.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creat a new book" wrappingWidth="182.8359375">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button onAction="#submit" layoutX="292.0" layoutY="260.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Submit" textFill="#c30f0f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button onAction="#back" layoutX="40.0" layoutY="33.0" mnemonicParsing="false" text="&lt;&lt; Back" textFill="#eb0d0d" />
+   </children>
+</Pane>

@@ -8,23 +8,15 @@ import javafx.scene.text.Text;
 
 
 public class QuanLyMuonSachController {
-    public TextField txtSName;
-    public TextField txtBName;
-    public TextField txtDate;
-    public TextField txtDepcrip;
-    public Text Errors;
-    public TableView<Form> tbv;
-
-    public TableColumn SName;
-    public TableColumn BName;
-    public TableColumn Date;
-    public TableColumn Depcrip;
+   public TableColumn StudentName;
+   public TableColumn BookName;
+   public TableColumn Depc;
 
 
     public void Add(){
 
     }
-    public void Edit(){
+    public void Back(){
 
     }
 }

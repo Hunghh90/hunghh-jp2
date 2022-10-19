@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#d70a0a" layoutX="194.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BookStudent" wrappingWidth="194.14990234375">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <TextField layoutX="201.0" layoutY="200.0" />
+      <Button layoutX="35.0" layoutY="37.0" mnemonicParsing="false" text="&lt;&lt; Back" />
+      <Button layoutX="300.0" layoutY="250.0" mnemonicParsing="false" text="Submit" />
+      <ComboBox layoutX="200.0" layoutY="91.0" prefWidth="150.0" promptText="Student" />
+      <ComboBox layoutX="200.0" layoutY="148.0" prefWidth="150.0" promptText="Book" />
+   </children>
+</Pane>

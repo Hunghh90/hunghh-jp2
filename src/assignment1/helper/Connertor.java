@@ -10,7 +10,9 @@ public class Connertor {
 
     Connection conn;
 
-    public Connertor() {
+    private static Connertor instance;
+
+    private Connertor() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             this.conn = DriverManager.getConnection(connectionString,user,pwd);
@@ -18,6 +20,13 @@ public class Connertor {
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
+    }
+
+    public static Connertor getInstance() {
+        if(instance == null){
+            instance = new Connertor();
+        }
+        return instance;
     }
 
     public Statement getStatement() throws Exception{
@@ -62,5 +71,24 @@ public class Connertor {
             return false;
         }
         return true;
+    }
+
+    public ResultSet executeQuery(String sql, ArrayList parameters){
+        try {
+            PreparedStatement pstm = getPreparedStatement(sql);
+            for (int i=0;i<parameters.size();i++){
+                if(parameters.get(i) instanceof Integer){
+                    pstm.setInt(i+1,(Integer) parameters.get(i));
+                }else if(parameters.get(i) instanceof Double){
+                    pstm.setDouble(i+1,(Double)parameters.get(i));
+                }else {
+                    pstm.setString(i+1,(String)parameters.get(i));
+                }
+            }
+            return pstm.executeQuery();
+        }catch (Exception e){
+            return null;
+        }
+
     }
 }

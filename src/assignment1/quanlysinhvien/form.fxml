@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Text?>
 <Pane fx:controller="assignment1.quanlysinhvien.QuanLySinhVienController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text layoutX="278.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books">
+      <Text layoutX="278.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student">
          <font>
             <Font size="28.0" />
          </font></Text>

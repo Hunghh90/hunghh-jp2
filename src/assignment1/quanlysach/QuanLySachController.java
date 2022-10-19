@@ -37,7 +37,7 @@ public class QuanLySachController implements Initializable {
        try {
 
            String sql_txt = "select * from books";
-           Connertor conn = new Connertor();
+           Connertor conn = Connertor.getInstance();
            ResultSet rs = conn.query(sql_txt);
            while (rs.next()){
                int id = rs.getInt("id");

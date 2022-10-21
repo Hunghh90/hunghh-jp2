@@ -35,7 +35,7 @@ public class BookStudentController implements Initializable {
         StudentRepository br1 = new StudentRepository();
         ObservableList<Student> lsv = FXCollections.observableArrayList();
         lsv.addAll(br1.all());
-        msBook.setItems(ls);
+        msStudent.setItems(lsv);
     }
 
     public void submit(ActionEvent actionEvent) {
@@ -43,6 +43,8 @@ public class BookStudentController implements Initializable {
         Student selected1 = msStudent.getSelectionModel().getSelectedItem();
         LocalDate dp = msNgayTra.getValue();
         System.out.println(selected.getName());
+        System.out.println(selected1.getName());
+        System.out.println(dp);
 
     }
     public void back()throws Exception{

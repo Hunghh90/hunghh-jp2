@@ -2,6 +2,7 @@ package assignment1.quanlysach;
 
 import assignment1.Form;
 import assignment1.Main;
+import assignment1.dao.impls.BookReposittory;
 import assignment1.helper.Connertor;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -9,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -23,6 +25,7 @@ public class QuanLySachController implements Initializable {
     public TableColumn<Form,String> Name;
     public TableColumn<Form,String> Author;
     public TableColumn<Form,Integer> Quantity;
+    public TableColumn<Form, Button> Action;
 
 
 
@@ -32,27 +35,12 @@ public class QuanLySachController implements Initializable {
         Name.setCellValueFactory(new PropertyValueFactory<Form,String>("name"));
         Author.setCellValueFactory(new PropertyValueFactory<Form,String>("author"));
         Quantity.setCellValueFactory(new PropertyValueFactory<Form,Integer>("qty"));
+        Action.setCellValueFactory(new PropertyValueFactory<Form,Button>("edit"));
 
         ObservableList<Form> ls = FXCollections.observableArrayList();
-       try {
-
-           String sql_txt = "select * from books";
-           Connertor conn = Connertor.getInstance();
-           ResultSet rs = conn.query(sql_txt);
-           while (rs.next()){
-               int id = rs.getInt("id");
-               String name = rs.getString("name");
-               String author = rs.getString("author");
-               int qty = rs.getInt("qty");
-               Form b = new Form(id,name,author,qty);
-               ls.add(b);
-           }
-       }catch (Exception e){
-           System.out.println(e.getMessage());
-       }finally {
-           tbBooks.setItems(ls);
-       }
-
+        BookReposittory br = new BookReposittory();
+        ls.addAll(br.all());
+        tbBooks.setItems(ls);
 
     }
 

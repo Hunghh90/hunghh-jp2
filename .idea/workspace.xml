@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4be1f7f-e996-4bc7-ad62-acacb4c718e8" name="Changes" comment="upcode">
-      <change afterPath="$PROJECT_DIR$/src/assignment1/quanlysinhvien/CreatStudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment1/quanlysinhvien/creatstudent.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment1/dao/impls/BookReposittory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment1/dao/impls/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment1/dao/interfaces/IBookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment1/dao/interfaces/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment1/quanlymuonsach/BookStudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment1/quanlysach/BookEditController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment1/quanlysach/edit.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment1/quanlysinhvien/StudentEditController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment1/quanlysinhvien/edit.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment1/helper/Connertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/helper/Connertor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment1/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment1/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment1/quanlymuonsach/bookstudent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/quanlymuonsach/bookstudent.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignment1/quanlysach/CreatBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/quanlysach/CreatBookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignment1/quanlysach/QuanLySachController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/quanlysach/QuanLySachController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment1/quanlysinhvien/QuanLySinhVienController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/quanlysinhvien/QuanLySinhVienController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment1/quanlysinhvien/form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/quanlysinhvien/form.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -41,6 +50,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/hunghh-jp2/src/assignment1/quanlysinhvien",
     "nodejs_package_manager_path": "npm"
@@ -49,6 +59,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\hunghh-jp2\src\assignment1\quanlysinhvien" />
+      <recent name="C:\hunghh-jp2\src\assignment1\quanlysach" />
       <recent name="C:\hunghh-jp2\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -83,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666016433814</updated>
-      <workItem from="1666016435415" duration="9772000" />
+      <workItem from="1666016435415" duration="21015000" />
     </task>
     <task id="LOCAL-00001" summary="upcode">
       <created>1666016582664</created>
@@ -99,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666099545056</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="upcode">
+      <created>1666190630881</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666190630881</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

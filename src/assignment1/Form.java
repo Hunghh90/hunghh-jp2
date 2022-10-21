@@ -1,16 +1,41 @@
 package assignment1;
 
+import assignment1.quanlysach.BookEditController;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+
 public class Form {
     public Integer id;
     public String name;
     public String author;
     public Integer qty;
+    public Button edit;
+
+    public Form() {
+    }
 
     public Form(Integer id, String name, String author, Integer qty) {
         this.id = id;
         this.name = name;
         this.author = author;
         this.qty = qty;
+        this.edit = new Button("Edit");
+        this.edit.setOnAction((event) -> {
+            try {
+                BookEditController.editedBook = this;
+                Parent edit = FXMLLoader.load(getClass().getResource("../assignment1/quanlysach/edit.fxml"));
+                Main.rootStage.setTitle("Edit Book");
+                Main.rootStage.setScene(new Scene(edit,800,600));
+            }catch (Exception e){
+
+            }
+        });
+    }
+
+    public Button getEdit() {
+        return edit;
     }
 
     public Integer getId() {
@@ -43,5 +68,8 @@ public class Form {
 
     public void setQty(Integer qty) {
         this.qty = qty;
+    }
+    public String toString(){
+        return getName();
     }
 }

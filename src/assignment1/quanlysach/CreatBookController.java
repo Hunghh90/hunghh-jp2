@@ -1,6 +1,8 @@
 package assignment1.quanlysach;
 
+import assignment1.Form;
 import assignment1.Main;
+import assignment1.dao.impls.BookReposittory;
 import assignment1.helper.Connertor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -22,13 +24,9 @@ public class CreatBookController {
             String name = txtName.getText();
             String author = txtAuthor.getText();
             Integer qty = Integer.parseInt(txtQty.getText());
-            String sql_txt = "insert into books(name,author,qty) values(?,?,?)";
-            Connertor conn = Connertor.getInstance();
-            ArrayList arr = new ArrayList();
-            arr.add(name);
-            arr.add(author);
-            arr.add(qty);
-            if(conn.execute(sql_txt,arr)){
+            Form book = new Form(null,name,author,qty);
+            BookReposittory br = new BookReposittory();
+            if(br.create(book)){
                 back();
             }else{
                 System.out.println("Error");

@@ -17,8 +17,8 @@ public class HomeController {
         Main.rootStage.setScene(new Scene(quanLySinhVien, 800,600));
     }
     public void quanLyMuonSach()throws Exception{
-        Parent quanLySinhVien = FXMLLoader.load(getClass().getResource("quanlymuonsach/bookstudent.fxml"));
+        Parent QuanLyMuonSach = FXMLLoader.load(getClass().getResource("quanlymuonsach/form.fxml"));
         Main.rootStage.setTitle("QuanLyMuonSach");
-        Main.rootStage.setScene(new Scene(quanLySinhVien, 800,600));
+        Main.rootStage.setScene(new Scene(QuanLyMuonSach, 800,600));
     }
 }

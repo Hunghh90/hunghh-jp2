@@ -2,12 +2,13 @@ package assignment1.dao.impls;
 
 import assignment1.Form;
 import assignment1.dao.interfaces.IBookRepository;
+import assignment1.dao.interfaces.IRepository;
 import assignment1.helper.Connertor;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-public class BookReposittory implements IBookRepository {
+public class BookReposittory implements IRepository<Form> {
     @Override
     public ArrayList<Form> all() {
         ArrayList<Form> ls = new ArrayList<>();
@@ -30,8 +31,9 @@ public class BookReposittory implements IBookRepository {
         return ls;
     }
 
+
     @Override
-    public Boolean create(Form book) {
+    public boolean create(Form book) {
         try {
             String sql_txt = "insert into books(name,author,qty) values(?,?,?)";
             Connertor conn = Connertor.getInstance();
@@ -50,7 +52,7 @@ public class BookReposittory implements IBookRepository {
     }
 
     @Override
-    public Boolean update(Form book) {
+    public boolean update(Form book) {
         try {
             String sql_txt = "update books set name =?, author = ?, qty = ? where id = ?";
             Connertor conn = Connertor.getInstance();
@@ -70,7 +72,7 @@ public class BookReposittory implements IBookRepository {
     }
 
     @Override
-    public Boolean delete(Form book) {
+    public boolean delete(Form book) {
         try {
 
             String sql_txt = "delete from books where id=?";

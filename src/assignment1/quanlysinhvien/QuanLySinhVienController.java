@@ -2,7 +2,10 @@ package assignment1.quanlysinhvien;
 
 import assignment1.Main;
 import assignment1.Student;
+import assignment1.dao.impls.BookReposittory;
 import assignment1.dao.impls.StudentRepository;
+import assignment1.enums.RepositoryType;
+import assignment1.factory.RepositoryFactory;
 import assignment1.helper.Connertor;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -41,7 +44,8 @@ public class QuanLySinhVienController implements Initializable {
         Action.setCellValueFactory(new PropertyValueFactory<Student,Button>("edit"));
 
         ObservableList<Student> lsv = FXCollections.observableArrayList();
-        StudentRepository s = new StudentRepository();
+        StudentRepository s = (StudentRepository) RepositoryFactory.creatRepository(RepositoryType.STUDENT);
+
                 lsv.addAll(s.all());
             tbStudents.setItems(lsv);
 

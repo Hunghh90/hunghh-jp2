@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment1.quanlymuonsach.QuanLyMuonSachController">
    <children>
       <Text layoutX="278.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books">
@@ -12,13 +16,13 @@
          </font></Text>
       <Button layoutX="476.0" layoutY="27.0" mnemonicParsing="false" onAction="#Add" text="New BookStudent" />
       <Button layoutX="103.0" layoutY="27.0" mnemonicParsing="false" onAction="#Back" text="&lt;&lt; Back" />
-      <TableView fx:id="tbBooks" editable="true" layoutX="103.0" layoutY="69.0" prefHeight="201.0" prefWidth="444.0">
+      <TableView fx:id="tbBookRents" editable="true" layoutX="19.0" layoutY="69.0" prefHeight="201.0" prefWidth="598.0">
         <columns>
           <TableColumn fx:id="ID" prefWidth="51.0" text="ID" />
           <TableColumn fx:id="StudentName" prefWidth="175.0" text="Student Name" />
             <TableColumn fx:id="BookName" prefWidth="106.0" text="Book Name" />
-            <TableColumn fx:id="Depc" prefWidth="39.0" text="Depc" />
-            <TableColumn fx:id="Action" prefWidth="72.0" text="Action" />
+            <TableColumn fx:id="Depc" prefWidth="132.0" text="Date Rent" />
+            <TableColumn fx:id="Action" prefWidth="133.0" text="Action" />
         </columns>
       </TableView>
    </children>

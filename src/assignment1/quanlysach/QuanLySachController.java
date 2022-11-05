@@ -3,6 +3,8 @@ package assignment1.quanlysach;
 import assignment1.Form;
 import assignment1.Main;
 import assignment1.dao.impls.BookReposittory;
+import assignment1.enums.RepositoryType;
+import assignment1.factory.RepositoryFactory;
 import assignment1.helper.Connertor;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -38,7 +40,7 @@ public class QuanLySachController implements Initializable {
         Action.setCellValueFactory(new PropertyValueFactory<Form,Button>("edit"));
 
         ObservableList<Form> ls = FXCollections.observableArrayList();
-        BookReposittory br = new BookReposittory();
+        BookReposittory br = (BookReposittory) RepositoryFactory.creatRepository(RepositoryType.BOOk);
         ls.addAll(br.all());
         tbBooks.setItems(ls);
 

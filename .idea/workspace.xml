@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4be1f7f-e996-4bc7-ad62-acacb4c718e8" name="Changes" comment="upcode">
-      <change afterPath="$PROJECT_DIR$/src/assignment1/BookRent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment1/dao/impls/BookRentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment1/dao/interfaces/IBookRentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment1/dao/interfaces/IRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment1/enums/RepositoryType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment1/factory/RepositoryFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demoI18n/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demoI18n/message_en_US.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demoI18n/message_vi_VN.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demogeneric/Generic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demogeneric/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demothreads/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demothreads/SubRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demothreads/SubThread1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment1/AutoCompleteComboBoxListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment1/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment1/dao/impls/BookReposittory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/dao/impls/BookReposittory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment1/dao/impls/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/dao/impls/StudentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignment1/quanlymuonsach/BookStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/quanlymuonsach/BookStudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment1/quanlymuonsach/QuanLyMuonSachController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/quanlymuonsach/QuanLyMuonSachController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment1/quanlymuonsach/form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/quanlymuonsach/form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment1/quanlysach/QuanLySachController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/quanlysach/QuanLySachController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment1/quanlysinhvien/QuanLySinhVienController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/quanlysinhvien/QuanLySinhVienController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment1/quanlymuonsach/bookstudent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment1/quanlymuonsach/bookstudent.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +129,7 @@
       <workItem from="1666421007088" duration="33204000" />
       <workItem from="1667630565170" duration="15000" />
       <workItem from="1667631387915" duration="580000" />
-      <workItem from="1667641337001" duration="10573000" />
+      <workItem from="1667641337001" duration="14180000" />
     </task>
     <task id="LOCAL-00001" summary="upcode">
       <created>1666016582664</created>
@@ -178,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666356696151</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="upcode">
+      <created>1667662304957</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667662304957</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

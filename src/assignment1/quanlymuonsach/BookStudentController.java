@@ -1,9 +1,6 @@
 package assignment1.quanlymuonsach;
 
-import assignment1.BookRent;
-import assignment1.Form;
-import assignment1.Main;
-import assignment1.Student;
+import assignment1.*;
 import assignment1.dao.impls.BookRentRepository;
 import assignment1.dao.impls.BookReposittory;
 import assignment1.dao.impls.StudentRepository;
@@ -43,6 +40,7 @@ public class BookStudentController implements Initializable {
         StudentRepository br1 = (StudentRepository)RepositoryFactory.creatRepository(RepositoryType.STUDENT);
         lsv.addAll(br1.all());
         msStudent.setItems(lsv);
+
     }
 
     public void submit(ActionEvent actionEvent) {
@@ -72,5 +70,22 @@ public class BookStudentController implements Initializable {
         Parent addBook = FXMLLoader.load(getClass().getResource("../quanlymuonsach/form.fxml"));
         Main.rootStage.setTitle("addBook");
         Main.rootStage.setScene(new Scene(addBook, 800,600));
+    }
+
+
+    public void setMsBook(ComboBox<Form> msBook) {
+        this.msBook = msBook;
+    }
+
+    public ComboBox<Student> getMsStudent() {
+        return msStudent;
+    }
+
+    public ComboBox<Form> getMsBook() {
+        return msBook;
+    }
+
+    public void setMsStudent(ComboBox<Student> msStudent) {
+        this.msStudent = msStudent;
     }
 }

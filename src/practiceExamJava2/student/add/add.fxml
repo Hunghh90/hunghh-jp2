@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="practiceExamJava2.student.add.AddStudentController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtId" layoutX="64.0" layoutY="39.0" promptText="student id" />
+      <TextField fx:id="txtname" layoutX="64.0" layoutY="119.0" promptText="student name" />
+      <TextField fx:id="txtaddress" layoutX="64.0" layoutY="188.0" promptText="address" />
+      <TextField fx:id="txtphone" layoutX="64.0" layoutY="264.0" promptText="phone" />
+      <Button onAction="#AddStudent" layoutX="397.0" layoutY="39.0" mnemonicParsing="false" text="Create" />
+   </children>
+</Pane>

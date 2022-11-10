@@ -18,4 +18,5 @@
       <ComboBox fx:id="msBook" layoutX="200.0" layoutY="148.0" prefWidth="150.0" promptText="Book" />
       <DatePicker fx:id="msNgayTra" layoutX="200.0" layoutY="209.0" />
    </children>
+
 </Pane>

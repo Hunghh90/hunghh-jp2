@@ -1,8 +1,6 @@
 package practiceExamJava2.student.list;
 
-import hotel.Main;
-import hotel.dao.impls.RoomRepository;
-import hotel.entities.Room;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -13,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import practiceExamJava2.Main;
 import practiceExamJava2.dao.impls.StudentRepository;
 import practiceExamJava2.entities.Student;
 import practiceExamJava2.enums.RepoType;
@@ -48,6 +47,7 @@ public class StudentController implements Initializable {
     }
 
     public void exit(ActionEvent actionEvent) {
+        System.exit(0);
     }
 
     public void save(ActionEvent actionEvent) {
